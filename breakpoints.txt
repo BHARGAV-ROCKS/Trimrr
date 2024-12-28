@@ -1,0 +1,26 @@
+Commands order wise
+
+npm create vite@latest 
+npm install
+
+Installation of shadcn-ui
+Go to https://ui.shadcn.com/docs/installation/vite
+npm install -D tailwindcss postcss autoprefixer
+
+create jsconfig.json
+edit vite.json
+
+npx shadcn@latest init
+
+here you may have occured a error 
+✖ Validating Tailwind CSS
+
+/* src/index.css or src/styles.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+put the above snippet in the index.css file
+
+
+Yes now the dependencies have been installed successfully
