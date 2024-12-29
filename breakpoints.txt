@@ -24,3 +24,60 @@ put the above snippet in the index.css file
 
 
 Yes now the dependencies have been installed successfully
+
+
+
+Here just type any thing in the div of the app.jsx and give it a class name and then see if the applied props are working fine
+
+
+
+Setup Supabase
+---------------
+
+create a organization and project in it
+
+npm i @supabase/supabase-js
+
+create the tables in that with fields required
+
+-----------------
+
+routing 
+ browserrouter modren way 
+
+pages
+
+layouts
+
+
+
+
+npx shadcn@latest add button
+npx shadcn@latest add dropdown-menu
+npx shadcn@latest add avatar
+npx shadcn@latest add accordion
+npx shadcn@latest add input
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
