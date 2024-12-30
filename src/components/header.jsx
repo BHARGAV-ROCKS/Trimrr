@@ -4,11 +4,12 @@ import { DropdownMenu } from "@radix-ui/react-dropdown-menu"
 import { DropdownMenuContent, DropdownMenuItem, DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuTrigger } from "./ui/dropdown-menu"
 import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar"
 import { LinkIcon, LogOut } from "lucide-react"
+import { UrlState } from "@/context"
 
 
 const Header = () => {
   const navigate = useNavigate()
-  const user = false
+  const {user,fetchUser}=UrlState()
   return (
     <nav className="py-10 flex justify-between items-center">
         <Link to="/">
@@ -23,12 +24,12 @@ const Header = () => {
                 <DropdownMenu>
                 <DropdownMenuTrigger className="w-10 rounded overflow-hidden">
                 <Avatar>
-                <AvatarImage src="https://github.com/shadcn.png" />
+                <AvatarImage src={user?.user_metadata?.profile_pic} />
                 <AvatarFallback>ABR</AvatarFallback>
                 </Avatar>
                 </DropdownMenuTrigger>
                 <DropdownMenuContent>
-                  <DropdownMenuLabel>Bhargav Raghuram</DropdownMenuLabel>
+                  <DropdownMenuLabel>{user?.user_metadata?.name}</DropdownMenuLabel>
                   <DropdownMenuSeparator/>
                   <DropdownMenuItem>
                   <LinkIcon className="mr-2 h-4 w-4"/>
