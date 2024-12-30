@@ -43,3 +43,12 @@ export async function signup({name,email,password,profile_pic}) {
 
     return data;
 }
+
+
+
+
+export function logout() {
+    const {error} = supabase.auth.signOut();
+    if(error) throw new Error(error.message);
+    return 
+}
