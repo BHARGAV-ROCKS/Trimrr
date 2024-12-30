@@ -57,6 +57,18 @@ npx shadcn@latest add dropdown-menu
 npx shadcn@latest add avatar
 npx shadcn@latest add accordion
 npx shadcn@latest add input
+npx shadcn@latest add tabs
+
+
+login,signup are created in components and imported in Auth
+
+Handle the API request
+npx shadcn@latest add card
+npm i react-spinners yup
+
+validation using  Yup
+custom hook for login logic
+
 
 
 
