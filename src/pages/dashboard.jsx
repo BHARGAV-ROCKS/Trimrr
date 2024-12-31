@@ -1,6 +1,6 @@
+import CreateLink from "@/components/create-link"
 import Error from "@/components/error"
 import LinkCard from "@/components/link-card"
-import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { UrlState } from "@/context"
@@ -67,7 +67,7 @@ const Dashboard = () => {
 
       <div className="flex justify-between">
         <h1 className="text-4xl font-extrabold">My links</h1>
-        <Button>Create Link</Button>
+        <CreateLink/>
       </div>
 
       <div className="relative">
