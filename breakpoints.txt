@@ -72,6 +72,7 @@ custom hook for login logic
 
 npx shadcn@latest add dialog
 npm install --save react-qrcode-logo
+npm i ua-parser-js
 
 
 
