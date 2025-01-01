@@ -70,7 +70,8 @@ validation using  Yup
 custom hook for login logic
 
 
-
+npx shadcn@latest add dialog
+npm install --save react-qrcode-logo
 
 
 

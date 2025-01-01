@@ -1,9 +1,9 @@
 
 
-const Link = () => {
+const LinkPage = () => {
   return (
     <div>Link</div>
   )
 }
 
-export default Link
+export default LinkPage

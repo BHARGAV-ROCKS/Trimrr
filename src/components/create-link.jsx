@@ -47,6 +47,7 @@ const CreateLink = () => {
     
 
     const createNewLink = async()=> {
+        console.log(formValues)
         setErrors([]);
         try {
             await schema.validate(formValues,{abortEarly:false});
@@ -55,7 +56,7 @@ const CreateLink = () => {
             await fnCreateUrl(blob);
         } catch (e) {
             const newErrors = {};
-            e?.inner?.forEach(err => {
+            e?.inner?.forEach((err) => {
                 newErrors[err.path]=err.message;
             });
 

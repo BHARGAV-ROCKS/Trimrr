@@ -34,7 +34,7 @@ export async function createUrl({title,longUrl,customUrl,user_id},qr_code) {
 
     const {data , error} = await supabase.from("urls").insert([
         {
-            title:"",
+            title,
             original_url:longUrl,
             custom_url :customUrl || null,
             user_id,

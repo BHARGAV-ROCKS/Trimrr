@@ -4,7 +4,7 @@ import AppLayout from "./layouts/app-layouts"
 import LandingPage from "./pages/landing"
 import Dashboard from "./pages/dashboard"
 import Auth from "./pages/auth"
-import Link from "./pages/link"
+import LinkPage from "./pages/link"
 import RedirectLink from "./pages/redirect-link"
 import UrlProvider from "./context"
 import RequireAuth from "./components/require-auth"
@@ -28,8 +28,8 @@ const router = createBrowserRouter([
         element:<Auth/>
       },
       {
-        path:"/link:id",
-        element:<RequireAuth><Link/></RequireAuth>
+        path:"/link/:id",
+        element:<RequireAuth><LinkPage/></RequireAuth>
       },
       {
         path:"/:id",
